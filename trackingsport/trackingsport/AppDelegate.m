@@ -6,7 +6,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "TSLoginViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -25,8 +26,8 @@
 
 - (void)initViewController {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    ViewController *vc = [ViewController new];
-    self.window.rootViewController = vc;
+    TSLoginViewController *loginVc = [TSLoginViewController new];
+    self.window.rootViewController = loginVc;
     [self.window makeKeyAndVisible];
 }
 

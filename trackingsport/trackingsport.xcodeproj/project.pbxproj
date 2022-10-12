@@ -9,9 +9,18 @@
 /* Begin PBXBuildFile section */
 		842EE45628F556B1003A7A04 /* UIView+Rect.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE45528F556B1003A7A04 /* UIView+Rect.m */; };
 		842EE46328F64C97003A7A04 /* TSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE46228F64C97003A7A04 /* TSLoginViewController.m */; };
+		842EE47028F6966A003A7A04 /* TSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE46F28F6966A003A7A04 /* TSHomeViewController.m */; };
+		842EE47628F69712003A7A04 /* TSHomeLeftTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE47528F69712003A7A04 /* TSHomeLeftTitleView.m */; };
+		842EE47928F69721003A7A04 /* TSHomeLeftContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE47828F69721003A7A04 /* TSHomeLeftContentView.m */; };
+		842EE47C28F69DB8003A7A04 /* TSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE47B28F69DB8003A7A04 /* TSBaseViewController.m */; };
+		842EE47F28F69DCC003A7A04 /* TSBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE47E28F69DCC003A7A04 /* TSBaseView.m */; };
+		842EE48228F69DE3003A7A04 /* TSBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE48128F69DE3003A7A04 /* TSBaseModel.m */; };
+		842EE48528F69E77003A7A04 /* TSTrainingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE48428F69E77003A7A04 /* TSTrainingViewController.m */; };
+		842EE48828F69E9F003A7A04 /* TSDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE48728F69E9F003A7A04 /* TSDataViewController.m */; };
+		842EE48B28F69EB9003A7A04 /* TSTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE48A28F69EB9003A7A04 /* TSTaskViewController.m */; };
+		842EE49128F69EEF003A7A04 /* TSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE49028F69EEF003A7A04 /* TSSettingViewController.m */; };
 		84AA94C028F4F0D300B0EDEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA94BF28F4F0D300B0EDEF /* AppDelegate.m */; };
 		84AA94C328F4F0D300B0EDEF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA94C228F4F0D300B0EDEF /* SceneDelegate.m */; };
-		84AA94C628F4F0D300B0EDEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA94C528F4F0D300B0EDEF /* ViewController.m */; };
 		84AA94C928F4F0D300B0EDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AA94C728F4F0D300B0EDEF /* Main.storyboard */; };
 		84AA94CB28F4F0D500B0EDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AA94CA28F4F0D500B0EDEF /* Assets.xcassets */; };
 		84AA94CE28F4F0D500B0EDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AA94CC28F4F0D500B0EDEF /* LaunchScreen.storyboard */; };
@@ -23,13 +32,33 @@
 		842EE45528F556B1003A7A04 /* UIView+Rect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rect.m"; sourceTree = "<group>"; };
 		842EE46128F64C97003A7A04 /* TSLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLoginViewController.h; sourceTree = "<group>"; };
 		842EE46228F64C97003A7A04 /* TSLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLoginViewController.m; sourceTree = "<group>"; };
+		842EE46528F656B2003A7A04 /* TSMacros_h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMacros_h.h; sourceTree = "<group>"; };
+		842EE46628F66296003A7A04 /* TrackingSport_pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackingSport_pch.h; sourceTree = "<group>"; };
+		842EE46E28F6966A003A7A04 /* TSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSHomeViewController.h; sourceTree = "<group>"; };
+		842EE46F28F6966A003A7A04 /* TSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSHomeViewController.m; sourceTree = "<group>"; };
+		842EE47428F69712003A7A04 /* TSHomeLeftTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSHomeLeftTitleView.h; sourceTree = "<group>"; };
+		842EE47528F69712003A7A04 /* TSHomeLeftTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSHomeLeftTitleView.m; sourceTree = "<group>"; };
+		842EE47728F69721003A7A04 /* TSHomeLeftContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSHomeLeftContentView.h; sourceTree = "<group>"; };
+		842EE47828F69721003A7A04 /* TSHomeLeftContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSHomeLeftContentView.m; sourceTree = "<group>"; };
+		842EE47A28F69DB8003A7A04 /* TSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseViewController.h; sourceTree = "<group>"; };
+		842EE47B28F69DB8003A7A04 /* TSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseViewController.m; sourceTree = "<group>"; };
+		842EE47D28F69DCC003A7A04 /* TSBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseView.h; sourceTree = "<group>"; };
+		842EE47E28F69DCC003A7A04 /* TSBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseView.m; sourceTree = "<group>"; };
+		842EE48028F69DE3003A7A04 /* TSBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseModel.h; sourceTree = "<group>"; };
+		842EE48128F69DE3003A7A04 /* TSBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseModel.m; sourceTree = "<group>"; };
+		842EE48328F69E77003A7A04 /* TSTrainingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTrainingViewController.h; sourceTree = "<group>"; };
+		842EE48428F69E77003A7A04 /* TSTrainingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTrainingViewController.m; sourceTree = "<group>"; };
+		842EE48628F69E9F003A7A04 /* TSDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDataViewController.h; sourceTree = "<group>"; };
+		842EE48728F69E9F003A7A04 /* TSDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDataViewController.m; sourceTree = "<group>"; };
+		842EE48928F69EB9003A7A04 /* TSTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTaskViewController.h; sourceTree = "<group>"; };
+		842EE48A28F69EB9003A7A04 /* TSTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTaskViewController.m; sourceTree = "<group>"; };
+		842EE48F28F69EEF003A7A04 /* TSSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSSettingViewController.h; sourceTree = "<group>"; };
+		842EE49028F69EEF003A7A04 /* TSSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSSettingViewController.m; sourceTree = "<group>"; };
 		84AA94BB28F4F0D300B0EDEF /* trackingsport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trackingsport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AA94BE28F4F0D300B0EDEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84AA94BF28F4F0D300B0EDEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		84AA94C128F4F0D300B0EDEF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		84AA94C228F4F0D300B0EDEF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		84AA94C428F4F0D300B0EDEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84AA94C528F4F0D300B0EDEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		84AA94C828F4F0D300B0EDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84AA94CA28F4F0D500B0EDEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84AA94CD28F4F0D500B0EDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +99,8 @@
 		842EE43D28F552EE003A7A04 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				842EE48628F69E9F003A7A04 /* TSDataViewController.h */,
+				842EE48728F69E9F003A7A04 /* TSDataViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -101,6 +132,8 @@
 		842EE44128F552EE003A7A04 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				842EE48328F69E77003A7A04 /* TSTrainingViewController.h */,
+				842EE48428F69E77003A7A04 /* TSTrainingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +209,9 @@
 		842EE44B28F552EE003A7A04 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				842EE48E28F69EE1003A7A04 /* Controller */,
+				842EE48C28F69EE1003A7A04 /* Model */,
+				842EE48D28F69EE1003A7A04 /* View */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -193,6 +229,8 @@
 		842EE44D28F552EE003A7A04 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				842EE48928F69EB9003A7A04 /* TSTaskViewController.h */,
+				842EE48A28F69EB9003A7A04 /* TSTaskViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,6 +262,8 @@
 		842EE45128F55355003A7A04 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				842EE47A28F69DB8003A7A04 /* TSBaseViewController.h */,
+				842EE47B28F69DB8003A7A04 /* TSBaseViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -231,6 +271,8 @@
 		842EE45228F55355003A7A04 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				842EE48028F69DE3003A7A04 /* TSBaseModel.h */,
+				842EE48128F69DE3003A7A04 /* TSBaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,8 +280,70 @@
 		842EE45328F55355003A7A04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				842EE47D28F69DCC003A7A04 /* TSBaseView.h */,
+				842EE47E28F69DCC003A7A04 /* TSBaseView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		842EE46A28F6962A003A7A04 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				842EE46B28F6962A003A7A04 /* Controller */,
+				842EE46C28F6962A003A7A04 /* Model */,
+				842EE46D28F6962A003A7A04 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		842EE46B28F6962A003A7A04 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				842EE46E28F6966A003A7A04 /* TSHomeViewController.h */,
+				842EE46F28F6966A003A7A04 /* TSHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		842EE46C28F6962A003A7A04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		842EE46D28F6962A003A7A04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				842EE47428F69712003A7A04 /* TSHomeLeftTitleView.h */,
+				842EE47528F69712003A7A04 /* TSHomeLeftTitleView.m */,
+				842EE47728F69721003A7A04 /* TSHomeLeftContentView.h */,
+				842EE47828F69721003A7A04 /* TSHomeLeftContentView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		842EE48C28F69EE1003A7A04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		842EE48D28F69EE1003A7A04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		842EE48E28F69EE1003A7A04 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				842EE48F28F69EEF003A7A04 /* TSSettingViewController.h */,
+				842EE49028F69EEF003A7A04 /* TSSettingViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		84AA94B228F4F0D300B0EDEF = {
@@ -261,6 +365,7 @@
 		84AA94BD28F4F0D300B0EDEF /* trackingsport */ = {
 			isa = PBXGroup;
 			children = (
+				842EE46A28F6962A003A7A04 /* Home */,
 				842EE45028F55355003A7A04 /* Base */,
 				842EE43B28F552EE003A7A04 /* Category */,
 				842EE43C28F552EE003A7A04 /* Data */,
@@ -275,8 +380,8 @@
 				84AA94BF28F4F0D300B0EDEF /* AppDelegate.m */,
 				84AA94C128F4F0D300B0EDEF /* SceneDelegate.h */,
 				84AA94C228F4F0D300B0EDEF /* SceneDelegate.m */,
-				84AA94C428F4F0D300B0EDEF /* ViewController.h */,
-				84AA94C528F4F0D300B0EDEF /* ViewController.m */,
+				842EE46528F656B2003A7A04 /* TSMacros_h.h */,
+				842EE46628F66296003A7A04 /* TrackingSport_pch.h */,
 				84AA94C728F4F0D300B0EDEF /* Main.storyboard */,
 				84AA94CA28F4F0D500B0EDEF /* Assets.xcassets */,
 				84AA94CC28F4F0D500B0EDEF /* LaunchScreen.storyboard */,
@@ -356,11 +461,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84AA94C628F4F0D300B0EDEF /* ViewController.m in Sources */,
+				842EE47028F6966A003A7A04 /* TSHomeViewController.m in Sources */,
 				842EE46328F64C97003A7A04 /* TSLoginViewController.m in Sources */,
+				842EE47F28F69DCC003A7A04 /* TSBaseView.m in Sources */,
+				842EE48528F69E77003A7A04 /* TSTrainingViewController.m in Sources */,
+				842EE47C28F69DB8003A7A04 /* TSBaseViewController.m in Sources */,
 				84AA94C028F4F0D300B0EDEF /* AppDelegate.m in Sources */,
+				842EE48B28F69EB9003A7A04 /* TSTaskViewController.m in Sources */,
+				842EE47928F69721003A7A04 /* TSHomeLeftContentView.m in Sources */,
+				842EE49128F69EEF003A7A04 /* TSSettingViewController.m in Sources */,
+				842EE48228F69DE3003A7A04 /* TSBaseModel.m in Sources */,
 				842EE45628F556B1003A7A04 /* UIView+Rect.m in Sources */,
+				842EE47628F69712003A7A04 /* TSHomeLeftTitleView.m in Sources */,
 				84AA94D128F4F0D500B0EDEF /* main.m in Sources */,
+				842EE48828F69E9F003A7A04 /* TSDataViewController.m in Sources */,
 				84AA94C328F4F0D300B0EDEF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +619,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G36H22GQRT;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/trackingsport/TrackingSport_pch.h";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = trackingsport/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -518,6 +634,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.trackingsport.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -533,6 +650,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G36H22GQRT;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/trackingsport/TrackingSport_pch.h";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = trackingsport/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -546,6 +665,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.trackingsport.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
