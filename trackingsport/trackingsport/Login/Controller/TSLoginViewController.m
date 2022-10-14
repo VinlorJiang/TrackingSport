@@ -129,6 +129,6 @@
     TSNSLog(@"");
     UINavigationController *navVc = [[UINavigationController alloc] initWithRootViewController:[TSHomeViewController new]];
 //    [KAppDelegate.window.rootViewController presentViewController:[TSRootViewController new] animated:YES completion:nil];
-    KAppDelegate.window.rootViewController = [TSHomeViewController new];
+    KWindow.rootViewController = [TSHomeViewController new];
 }
 @end

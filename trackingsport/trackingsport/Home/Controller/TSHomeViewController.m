@@ -57,11 +57,12 @@
 //        }
         
         TSTrainingViewController *trainingVc = [TSTrainingViewController new];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:trainingVc];
         TSDataViewController *dataVc = [TSDataViewController new];
         TSTaskViewController *taskVc = [TSTaskViewController new];
         TSSettingViewController *settingVc = [TSSettingViewController new];
 //        [mutabArray addObject:<#(nonnull id)#>];
-        NSArray *contentVcArray = @[trainingVc, dataVc,taskVc,settingVc];
+        NSArray *contentVcArray = @[nav, dataVc,taskVc,settingVc];
         _contentView = [[TSHomeLeftContentView alloc] initWithFrame:CGRectMake(70, 0, KScreenWidth, KScreenHeight) childViewControllerArrays:contentVcArray parentViewController:self];
         _contentView.delegate = self;
     }

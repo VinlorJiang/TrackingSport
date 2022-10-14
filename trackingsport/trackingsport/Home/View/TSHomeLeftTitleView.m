@@ -29,9 +29,7 @@
         _index = 0;
         _labelArray = [NSMutableArray array];
         self.titleArray = titleArray;
-        [self createScrollView];
-        self.backgroundColor = [UIColor redColor];
-    }
+        [self createScrollView];    }
     return  self;
 }
 
@@ -39,7 +37,7 @@
     
     _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     [self addSubview:_scrollView];
-    _scrollView.backgroundColor = [UIColor whiteColor];
+    _scrollView.backgroundColor = [UIColor lightGrayColor];
     NSLog(@"frame:%@--bound:%@",NSStringFromCGRect(self.frame),NSStringFromCGRect(self.bounds));
     _scrollView.scrollEnabled = NO;
     _scrollView.delegate = self;

@@ -12,16 +12,25 @@
 
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-
+    #import "AppDelegate.h"
 
     #import "TSMacros_h.h"//宏
-    //Catogery
-    #import "UIView+Rect.h"
+
     // Base
     #import "TSBaseViewController.h"
     #import "TSBaseView.h"
     #import "TSBaseModel.h"
 
+    //Catogery
+    #import "NSObject+Common.h"
+    #import "UIView+Rect.h"
+    #import "UIButton+Common.h"
+    #import "NSDictionary+Common.h"
+
+    
+
 #endif
 
 #endif /* TrackingSport_pch_h */
+
+

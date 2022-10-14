@@ -10,7 +10,6 @@
 
 // Window AppDelegate 通知中心和UserDefaults
 #define KWindow [[[UIApplication sharedApplication] delegate] window]
-#define KAppDelegate (([UIApplication sharedApplication].delegate))
 #define KNotificationCenter [NSNotificationCenter defaultCenter]
 #define KUserDefaults [NSUserDefaults standardUserDefaults]
 
@@ -21,6 +20,7 @@
 
 // 颜色(0xFFFFFF) 不用带 0x 和 @""
 #define COLOR_WITH_HEX(hexValue) [UIColor colorWithRed:((float)((0x##hexValue & 0xFF0000) >> 16)) / 255.0 green:((float)((0x##hexValue & 0xFF00) >> 8)) / 255.0 blue:((float)(0x##hexValue & 0xFF)) / 255.0 alpha:1.0f]
+
 //颜色
 #define BlackColor       [UIColor blackColor]
 #define DarkGrayColor    [UIColor darkGrayColor]
@@ -37,6 +37,11 @@
 #define BrownColor       [UIColor brownColor]
 #define ClearColor       [UIColor clearColor]
 #define GrayColor        [UIColor grayColor]
+
+//颜色(RGB)
+#define KRGBColor(r, g, b) [UIColor colorWithRed:(r) / 255.0f green:(g) / 255.0f blue:(b) / 255.0f alpha:1]
+#define KRGBAColor(r, g, b, a) [UIColor colorWithRed:(r) / 255.0f green:(g) / 255.0f blue:(b) / 255.0f alpha:(a)]
+
 //字体  适配的字体
 #define KFont(f) ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){.majorVersion = 8, .minorVersion = 2, .patchVersion = 0}]) ?\
 ([UIFont systemFontOfSize:f weight:UIFontWeightRegular]) : \
@@ -59,6 +64,31 @@ fprintf(stderr, "%s  %d行 ------>:\t%s\n", [[[NSString stringWithUTF8String:__F
 
 #define KMASBoxValue(value) aMASBoxValue(@encode(__typeof__(value)), (value))
 
+//获取当前语言
+#define KCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
+
+//沙盒路径
+#define KSandboxPath NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject
+//Library 路径
+#define KLibraryboxPath NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES).firstObject
+
+//强弱引用
+#define WeakSelf(type) __weak typeof(type) weak##type = type;
+#define __WeakSelf WeakSelf(self)
+
+#define StrongSelf(type) __strong typeof(type) type = weak##type;
+#define __StrongSelf StrongSelf(self)
+
+//线程
+static inline void Kdispatch_async_on_main_queue(void (^block)()) {
+    dispatch_async(dispatch_get_main_queue(), block);
+}
+static inline void Kdispatch_async_on_global_queue(void (^block)()) {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block);
+}
+static inline void Kdispatch_after_main_queue(CGFloat t, void (^block)()) {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(t * NSEC_PER_SEC)), dispatch_get_main_queue(), block);
+}
 
 //将括号内的类型转化成id类型
 static inline id aMASBoxValue(const char *type, ...) {
