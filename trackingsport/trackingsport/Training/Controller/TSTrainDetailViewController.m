@@ -6,9 +6,10 @@
 //
 
 #import "TSTrainDetailViewController.h"
+#import "CustomKeyboard.h"
 
-@interface TSTrainDetailViewController ()
-
+@interface TSTrainDetailViewController ()<CustomKeyboardProtocol,UITextFieldDelegate>
+@property (strong, nonatomic) UITextField *heightTF;
 @end
 
 @implementation TSTrainDetailViewController
@@ -17,16 +18,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = LightGrayColor;
+    [self.view addSubview:self.heightTF];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITextField *)heightTF {
+    if(!_heightTF) {
+        _heightTF = [[UITextField alloc] initWithFrame:CGRectMake(100, 100, KScreenWidth, 300)];
+        _heightTF.delegate = self;
+        _heightTF.inputView = [CustomKeyboard KeyboardWithTextField:_heightTF delegate:self keyboardType:KeyboardHavePointAmount];
+    }
+    return _heightTF;
 }
-*/
-
+- (void)customTextFieldDidChange:(UITextField *)textField {
+    TSNSLog(@"customTextFieldDidChange");
+}
+- (BOOL)textFieldShouldClear:(UITextField *)textField {
+    
+    return YES;
+}
 @end

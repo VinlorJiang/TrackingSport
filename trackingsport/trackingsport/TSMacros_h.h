@@ -79,6 +79,9 @@ fprintf(stderr, "%s  %d行 ------>:\t%s\n", [[[NSString stringWithUTF8String:__F
 #define StrongSelf(type) __strong typeof(type) type = weak##type;
 #define __StrongSelf StrongSelf(self)
 
+//获取当前系统时间戳
+#define KGetCurentTime [NSString stringWithFormat:@"%zd", (long)[[NSDate date] timeIntervalSince1970]]
+
 //线程
 static inline void Kdispatch_async_on_main_queue(void (^block)()) {
     dispatch_async(dispatch_get_main_queue(), block);

@@ -99,7 +99,7 @@
     passwordTextField.textAlignment = NSTextAlignmentLeft;
     passwordTextField.borderStyle = UITextBorderStyleNone;
     [passwordView addSubview:passwordTextField];
-    
+    passwordTextField.keyboardType = UIKeyboardTypeNumberPad;
     
     
     UIButton *loginButton = [[UIButton alloc] initWithFrame:CGRectMake(accountView.left, passwordView.bottom + 20, textViewW, textfieldH)];

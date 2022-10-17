@@ -14,5 +14,7 @@
 @property (nonatomic, copy) NSString *accountId;
 @property (assign, nonatomic) BOOL isLogin;           /** 是否登陆状态 */
 @property (nonatomic, strong) NSString *userProfile;             //头像;
+/** 授权登陆解密key */
+@property (nonatomic, copy) NSString *key;
 @end
 
