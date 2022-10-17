@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TSLoginViewController : UIViewController
+@interface TSLoginViewController : TSBaseViewController
 
 @end
 

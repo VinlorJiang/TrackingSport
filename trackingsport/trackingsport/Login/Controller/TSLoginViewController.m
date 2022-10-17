@@ -34,11 +34,20 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = WhiteColor;
     [self setupUI];
+    
+    [KNotificationCenter addObserver:self
+                            selector:@selector(enterBackground:)
+                                name:UIApplicationDidEnterBackgroundNotification
+                              object:nil];
+    
+    
+    [KNotificationCenter addObserver:self selector:@selector(keyBoardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [KNotificationCenter addObserver:self selector:@selector(keyBoardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 }
 
 #pragma private methods
 - (void)setupUI {
-    UILabel *title1Label = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, KScreenWidth, 30)];
+    UILabel *title1Label = [[UILabel alloc] initWithFrame:CGRectMake(0, 300, KScreenWidth, 30)];
     title1Label.backgroundColor = WhiteColor;
     title1Label.text = @"一起科学训练";
     title1Label.textColor = BlackColor;
@@ -46,6 +55,7 @@
     title1Label.font = KFont(15);
     title1Label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:title1Label];
+    self.title1LB = title1Label;
     
     UILabel *title2Label = [[UILabel alloc] initWithFrame:CGRectMake(0, title1Label.bottom, KScreenWidth, 30)];
     title2Label.backgroundColor = WhiteColor;
@@ -60,6 +70,7 @@
     accountView.backgroundColor = YellowColor;
     [self.view addSubview:accountView];
     accountView.layer.cornerRadius = textfieldH * 0.5;
+    self.accountView = accountView;
     
     UILabel *accountLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, tipLabelW, textfieldH)];
     accountLabel.backgroundColor = ClearColor;
@@ -83,6 +94,7 @@
     passwordView.backgroundColor = RedColor;
     [self.view addSubview:passwordView];
     passwordView.layer.cornerRadius = textfieldH * 0.5;
+    self.passwordView = passwordView;
     
     UILabel *passwordLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, tipLabelW, textfieldH)];
     passwordLabel.backgroundColor = ClearColor;
@@ -138,4 +150,23 @@
         TSNSLog(@"");
     }];
 }
+
+#pragma mark ________________________________________________________键盘处理
+
+/** 键盘出现 */
+static CGFloat keyboardHeight = 0;
+- (void)keyBoardWillShow:(NSNotification *)sender {
+    keyboardHeight = MAX([sender.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size.height, keyboardHeight); //键盘高度
+    CGFloat keyBoardY = KScreenHeight - keyboardHeight; //键盘Window中的Y值
+    CGFloat pwdBottom = self.passwordView.bottom + 15;
+    if (keyBoardY >= pwdBottom) return;
+    CGFloat interval = ABS(pwdBottom - keyBoardY);
+    [UIView animateWithDuration:0.25 animations:^{
+        self.view.top =- interval;
+    }];
+}
+- (void)keyBoardWillHide:(NSNotification *)sender {
+    [UIView animateWithDuration:0.25 animations:^{ self.view.top = 0;}];
+}
+
 @end
