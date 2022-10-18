@@ -142,12 +142,13 @@
     TSNSLog(@"");
     UINavigationController *navVc = [[UINavigationController alloc] initWithRootViewController:[TSHomeViewController new]];
 //    [KAppDelegate.window.rootViewController presentViewController:[TSRootViewController new] animated:YES completion:nil];
-//    KWindow.rootViewController = [TSHomeViewController new];
+    
     NSDictionary *paramDic = [[NSDictionary alloc] init];
     [[TSNetWorkManage shareManage] loginRequestFromController:self parameters:paramDic success:^(TSNetworkRespose * _Nonnull dataTask, id  _Nonnull response, NSDictionary * _Nonnull loginSaveDictionary) {
         TSNSLog(@"");
     } failure:^(TSNetworkRespose * _Nonnull dataTask, NSError * _Nonnull error) {
         TSNSLog(@"");
+        KWindow.rootViewController = [TSHomeViewController new];
     }];
 }
 

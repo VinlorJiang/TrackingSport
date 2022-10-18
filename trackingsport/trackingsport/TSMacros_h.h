@@ -13,6 +13,7 @@
 #define KNotificationCenter [NSNotificationCenter defaultCenter]
 #define KUserDefaults [NSUserDefaults standardUserDefaults]
 
+#define KLeftContentViewW 120
 
 //屏幕宽高
 #define KScreenWidth [UIScreen mainScreen].bounds.size.width

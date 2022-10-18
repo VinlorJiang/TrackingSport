@@ -37,7 +37,7 @@
     if (!_titleView) {
         NSArray *titleArray = @[@"训练", @"数据",@"作业",@"设置"];
         
-        _titleView = [[TSHomeLeftTitleView alloc] initWithFrame:CGRectMake(0, 0, 70, KScreenHeight) titleArray:titleArray];
+        _titleView = [[TSHomeLeftTitleView alloc] initWithFrame:CGRectMake(0, 0, KLeftContentViewW, KScreenHeight) titleArray:titleArray];
         _titleView.delegate = self;
     }
     
@@ -63,7 +63,7 @@
         TSSettingViewController *settingVc = [TSSettingViewController new];
 //        [mutabArray addObject:<#(nonnull id)#>];
         NSArray *contentVcArray = @[nav, dataVc,taskVc,settingVc];
-        _contentView = [[TSHomeLeftContentView alloc] initWithFrame:CGRectMake(70, 0, KScreenWidth, KScreenHeight) childViewControllerArrays:contentVcArray parentViewController:self];
+        _contentView = [[TSHomeLeftContentView alloc] initWithFrame:CGRectMake(KLeftContentViewW, 0, KScreenWidth, KScreenHeight) childViewControllerArrays:contentVcArray parentViewController:self];
         _contentView.delegate = self;
     }
     return _contentView;

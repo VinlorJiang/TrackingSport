@@ -54,6 +54,8 @@
 		84AD791928FD2E3B00518085 /* TSNetWorkManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD791828FD2E3B00518085 /* TSNetWorkManage.m */; };
 		84AD791F28FD2F8200518085 /* AFHTTPSessionManager+TSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD791E28FD2F8200518085 /* AFHTTPSessionManager+TSConfig.m */; };
 		84AD792228FD310D00518085 /* TSErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD792128FD310D00518085 /* TSErrorManager.m */; };
+		84AD792628FE501100518085 /* TSSettingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD792528FE501100518085 /* TSSettingHeaderView.m */; };
+		84AD792928FE86A400518085 /* TSSettingViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD792828FE86A400518085 /* TSSettingViewCell.m */; };
 		84F152EC28F941C40002B62C /* CustomKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F152EB28F941C40002B62C /* CustomKeyboard.m */; };
 		84F152EF28FCE3B40002B62C /* UITextField+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F152EE28FCE3B40002B62C /* UITextField+Common.m */; };
 		84F152F228FCE4100002B62C /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F152F128FCE4100002B62C /* NSString+Common.m */; };
@@ -244,6 +246,10 @@
 		84AD791E28FD2F8200518085 /* AFHTTPSessionManager+TSConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+TSConfig.m"; sourceTree = "<group>"; };
 		84AD792028FD310C00518085 /* TSErrorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSErrorManager.h; sourceTree = "<group>"; };
 		84AD792128FD310D00518085 /* TSErrorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSErrorManager.m; sourceTree = "<group>"; };
+		84AD792428FE501100518085 /* TSSettingHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSSettingHeaderView.h; sourceTree = "<group>"; };
+		84AD792528FE501100518085 /* TSSettingHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSSettingHeaderView.m; sourceTree = "<group>"; };
+		84AD792728FE86A400518085 /* TSSettingViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSSettingViewCell.h; sourceTree = "<group>"; };
+		84AD792828FE86A400518085 /* TSSettingViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSSettingViewCell.m; sourceTree = "<group>"; };
 		84F152EA28F941C40002B62C /* CustomKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomKeyboard.h; sourceTree = "<group>"; };
 		84F152EB28F941C40002B62C /* CustomKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomKeyboard.m; sourceTree = "<group>"; };
 		84F152ED28FCE3B40002B62C /* UITextField+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Common.h"; sourceTree = "<group>"; };
@@ -601,6 +607,10 @@
 		842EE48D28F69EE1003A7A04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84AD792428FE501100518085 /* TSSettingHeaderView.h */,
+				84AD792528FE501100518085 /* TSSettingHeaderView.m */,
+				84AD792728FE86A400518085 /* TSSettingViewCell.h */,
+				84AD792828FE86A400518085 /* TSSettingViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -940,6 +950,7 @@
 				842EE49728F6BBA8003A7A04 /* NSObject+Common.m in Sources */,
 				84AD788828FD04B800518085 /* OpenSSLRSAWrapper.m in Sources */,
 				84F995D528F7BF6B00720A47 /* TSTrainDetailViewController.m in Sources */,
+				84AD792628FE501100518085 /* TSSettingHeaderView.m in Sources */,
 				84AD791128FD2E0600518085 /* UIImageView+AFNetworking.m in Sources */,
 				842EE49128F69EEF003A7A04 /* TSSettingViewController.m in Sources */,
 				84AD791928FD2E3B00518085 /* TSNetWorkManage.m in Sources */,
@@ -947,6 +958,7 @@
 				84F152EC28F941C40002B62C /* CustomKeyboard.m in Sources */,
 				84F1530728FCF54C0002B62C /* TSHelper.m in Sources */,
 				842EE45628F556B1003A7A04 /* UIView+Rect.m in Sources */,
+				84AD792928FE86A400518085 /* TSSettingViewCell.m in Sources */,
 				84F152FB28FCEDAB0002B62C /* CALayer+Common.m in Sources */,
 				842EE47628F69712003A7A04 /* TSHomeLeftTitleView.m in Sources */,
 				84AD790928FD2E0600518085 /* AFHTTPSessionManager.m in Sources */,
