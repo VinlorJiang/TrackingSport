@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8401DE4D29067D8C0008ADF2 /* TSTaskHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401DE4C29067D8C0008ADF2 /* TSTaskHeaderView.m */; };
+		8401DE502906864C0008ADF2 /* TSTaskHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401DE4F2906864C0008ADF2 /* TSTaskHeaderModel.m */; };
+		8401DE5429068DA70008ADF2 /* TSTaskHeaderItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401DE5329068DA70008ADF2 /* TSTaskHeaderItemView.m */; };
 		842EE45628F556B1003A7A04 /* UIView+Rect.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE45528F556B1003A7A04 /* UIView+Rect.m */; };
 		842EE46328F64C97003A7A04 /* TSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE46228F64C97003A7A04 /* TSLoginViewController.m */; };
 		842EE47028F6966A003A7A04 /* TSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE46F28F6966A003A7A04 /* TSHomeViewController.m */; };
@@ -76,6 +79,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8401DE4B29067D8C0008ADF2 /* TSTaskHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTaskHeaderView.h; sourceTree = "<group>"; };
+		8401DE4C29067D8C0008ADF2 /* TSTaskHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTaskHeaderView.m; sourceTree = "<group>"; };
+		8401DE4E2906864C0008ADF2 /* TSTaskHeaderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTaskHeaderModel.h; sourceTree = "<group>"; };
+		8401DE4F2906864C0008ADF2 /* TSTaskHeaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTaskHeaderModel.m; sourceTree = "<group>"; };
+		8401DE5229068DA70008ADF2 /* TSTaskHeaderItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTaskHeaderItemView.h; sourceTree = "<group>"; };
+		8401DE5329068DA70008ADF2 /* TSTaskHeaderItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTaskHeaderItemView.m; sourceTree = "<group>"; };
 		842EE45428F556B0003A7A04 /* UIView+Rect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Rect.h"; sourceTree = "<group>"; };
 		842EE45528F556B1003A7A04 /* UIView+Rect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rect.m"; sourceTree = "<group>"; };
 		842EE46128F64C97003A7A04 /* TSLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLoginViewController.h; sourceTree = "<group>"; };
@@ -512,6 +521,8 @@
 		842EE44E28F552EE003A7A04 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8401DE4E2906864C0008ADF2 /* TSTaskHeaderModel.h */,
+				8401DE4F2906864C0008ADF2 /* TSTaskHeaderModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -519,6 +530,10 @@
 		842EE44F28F552EE003A7A04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8401DE4B29067D8C0008ADF2 /* TSTaskHeaderView.h */,
+				8401DE4C29067D8C0008ADF2 /* TSTaskHeaderView.m */,
+				8401DE5229068DA70008ADF2 /* TSTaskHeaderItemView.h */,
+				8401DE5329068DA70008ADF2 /* TSTaskHeaderItemView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -922,8 +937,10 @@
 				84AD791428FD2E0600518085 /* UIWebView+AFNetworking.m in Sources */,
 				84F995D828F7DDE300720A47 /* TSStudentTestLayout.m in Sources */,
 				84AD788528FD02F500518085 /* GTMBase64.m in Sources */,
+				8401DE4D29067D8C0008ADF2 /* TSTaskHeaderView.m in Sources */,
 				842EE48528F69E77003A7A04 /* TSTrainingViewController.m in Sources */,
 				84F152EF28FCE3B40002B62C /* UITextField+Common.m in Sources */,
+				8401DE502906864C0008ADF2 /* TSTaskHeaderModel.m in Sources */,
 				84AD791328FD2E0600518085 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				84AD78E228FD06BB00518085 /* NSString+Base64.m in Sources */,
 				84AD78E328FD06BB00518085 /* NSData+Base64.m in Sources */,
@@ -949,6 +966,7 @@
 				84F995CA28F79EEE00720A47 /* TSStudentTestView.m in Sources */,
 				842EE49728F6BBA8003A7A04 /* NSObject+Common.m in Sources */,
 				84AD788828FD04B800518085 /* OpenSSLRSAWrapper.m in Sources */,
+				8401DE5429068DA70008ADF2 /* TSTaskHeaderItemView.m in Sources */,
 				84F995D528F7BF6B00720A47 /* TSTrainDetailViewController.m in Sources */,
 				84AD792628FE501100518085 /* TSSettingHeaderView.m in Sources */,
 				84AD791128FD2E0600518085 /* UIImageView+AFNetworking.m in Sources */,

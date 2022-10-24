@@ -14,6 +14,8 @@
 #define KUserDefaults [NSUserDefaults standardUserDefaults]
 
 #define KLeftContentViewW 120
+#define kTaskViewLeftSpace 30
+#define kTaskViewLatestCompltedViewW KLeftContentViewW * 1.7
 
 //屏幕宽高
 #define KScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -38,6 +40,7 @@
 #define BrownColor       [UIColor brownColor]
 #define ClearColor       [UIColor clearColor]
 #define GrayColor        [UIColor grayColor]
+#define TSBackgroundColor        KRGBColor(235, 247, 254)
 
 //颜色(RGB)
 #define KRGBColor(r, g, b) [UIColor colorWithRed:(r) / 255.0f green:(g) / 255.0f blue:(b) / 255.0f alpha:1]

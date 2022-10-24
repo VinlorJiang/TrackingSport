@@ -96,11 +96,8 @@ typedef NS_ENUM(NSUInteger,TSRequestStatus) {
                     failure:(void (^)(TSNetworkRespose *_Nonnull, NSError *_Nonnull))failure {
     
     TSNSLog(path);
-    //KNSLog([LanguageTool sharedInstance].getCurrentLanguage);
-    
     if (!path) return;
 
-    
     NSDictionary *tempDictionary = [self configurationParameters:parameters];
     
     [self.httpSessionManager POST:path parameters:tempDictionary success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
