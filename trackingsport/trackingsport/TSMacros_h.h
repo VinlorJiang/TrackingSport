@@ -15,7 +15,7 @@
 
 #define KLeftContentViewW 120
 #define kTaskViewLeftSpace 30
-#define kTaskViewLatestCompltedViewW KLeftContentViewW * 1.7
+#define kTaskViewLatestCompltedViewW KLeftContentViewW * 2.2
 
 //屏幕宽高
 #define KScreenWidth [UIScreen mainScreen].bounds.size.width
