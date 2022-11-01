@@ -14,7 +14,7 @@
 #define KUserDefaults [NSUserDefaults standardUserDefaults]
 
 #define KLeftContentViewW 120
-#define kTaskViewLeftSpace 30
+#define kTaskViewLeftSpace 50
 #define kTaskViewLatestCompltedViewW KLeftContentViewW * 2.2
 
 //屏幕宽高

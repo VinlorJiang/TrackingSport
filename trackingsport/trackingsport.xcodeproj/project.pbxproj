@@ -63,6 +63,18 @@
 		84AD792228FD310D00518085 /* TSErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD792128FD310D00518085 /* TSErrorManager.m */; };
 		84AD792628FE501100518085 /* TSSettingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD792528FE501100518085 /* TSSettingHeaderView.m */; };
 		84AD792928FE86A400518085 /* TSSettingViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD792828FE86A400518085 /* TSSettingViewCell.m */; };
+		84C5902A290FCCE9000DFC71 /* TSDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C59029290FCCE9000DFC71 /* TSDataModel.m */; };
+		84C5902D290FCD3C000DFC71 /* TSDataCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5902C290FCD3C000DFC71 /* TSDataCollectionViewCell.m */; };
+		84E1CD0B290F91EB00F4E937 /* TSDataLeftTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1CD0A290F91EB00F4E937 /* TSDataLeftTitleView.m */; };
+		84E1CD0E290F920600F4E937 /* TSDataLeftContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1CD0D290F920600F4E937 /* TSDataLeftContentView.m */; };
+		84E1CD11290F95C500F4E937 /* TSDataCoordinateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1CD10290F95C500F4E937 /* TSDataCoordinateViewController.m */; };
+		84E1CD14290F961F00F4E937 /* TSDataAgileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1CD13290F961F00F4E937 /* TSDataAgileViewController.m */; };
+		84E1CD17290F962E00F4E937 /* TSDataPowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1CD16290F962E00F4E937 /* TSDataPowerViewController.m */; };
+		84E1CD1A290F963B00F4E937 /* TSDataBalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1CD19290F963B00F4E937 /* TSDataBalanceViewController.m */; };
+		84E1CD1D290F964700F4E937 /* TSDataSpeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1CD1C290F964700F4E937 /* TSDataSpeedViewController.m */; };
+		84E1CD20290F965C00F4E937 /* TSDataHeartRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1CD1F290F965C00F4E937 /* TSDataHeartRateViewController.m */; };
+		84E1CD23290FA9D800F4E937 /* VLPageMenuTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1CD22290FA9D800F4E937 /* VLPageMenuTitleView.m */; };
+		84E1CD26290FA9EB00F4E937 /* VLPageMenuContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1CD25290FA9EB00F4E937 /* VLPageMenuContentView.m */; };
 		84F152EC28F941C40002B62C /* CustomKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F152EB28F941C40002B62C /* CustomKeyboard.m */; };
 		84F152EF28FCE3B40002B62C /* UITextField+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F152EE28FCE3B40002B62C /* UITextField+Common.m */; };
 		84F152F228FCE4100002B62C /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F152F128FCE4100002B62C /* NSString+Common.m */; };
@@ -270,6 +282,30 @@
 		84AD792528FE501100518085 /* TSSettingHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSSettingHeaderView.m; sourceTree = "<group>"; };
 		84AD792728FE86A400518085 /* TSSettingViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSSettingViewCell.h; sourceTree = "<group>"; };
 		84AD792828FE86A400518085 /* TSSettingViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSSettingViewCell.m; sourceTree = "<group>"; };
+		84C59028290FCCE9000DFC71 /* TSDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDataModel.h; sourceTree = "<group>"; };
+		84C59029290FCCE9000DFC71 /* TSDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDataModel.m; sourceTree = "<group>"; };
+		84C5902B290FCD3C000DFC71 /* TSDataCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDataCollectionViewCell.h; sourceTree = "<group>"; };
+		84C5902C290FCD3C000DFC71 /* TSDataCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDataCollectionViewCell.m; sourceTree = "<group>"; };
+		84E1CD09290F91EB00F4E937 /* TSDataLeftTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDataLeftTitleView.h; sourceTree = "<group>"; };
+		84E1CD0A290F91EB00F4E937 /* TSDataLeftTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDataLeftTitleView.m; sourceTree = "<group>"; };
+		84E1CD0C290F920600F4E937 /* TSDataLeftContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDataLeftContentView.h; sourceTree = "<group>"; };
+		84E1CD0D290F920600F4E937 /* TSDataLeftContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDataLeftContentView.m; sourceTree = "<group>"; };
+		84E1CD0F290F95C500F4E937 /* TSDataCoordinateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDataCoordinateViewController.h; sourceTree = "<group>"; };
+		84E1CD10290F95C500F4E937 /* TSDataCoordinateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDataCoordinateViewController.m; sourceTree = "<group>"; };
+		84E1CD12290F961F00F4E937 /* TSDataAgileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDataAgileViewController.h; sourceTree = "<group>"; };
+		84E1CD13290F961F00F4E937 /* TSDataAgileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDataAgileViewController.m; sourceTree = "<group>"; };
+		84E1CD15290F962E00F4E937 /* TSDataPowerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDataPowerViewController.h; sourceTree = "<group>"; };
+		84E1CD16290F962E00F4E937 /* TSDataPowerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDataPowerViewController.m; sourceTree = "<group>"; };
+		84E1CD18290F963B00F4E937 /* TSDataBalanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDataBalanceViewController.h; sourceTree = "<group>"; };
+		84E1CD19290F963B00F4E937 /* TSDataBalanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDataBalanceViewController.m; sourceTree = "<group>"; };
+		84E1CD1B290F964700F4E937 /* TSDataSpeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDataSpeedViewController.h; sourceTree = "<group>"; };
+		84E1CD1C290F964700F4E937 /* TSDataSpeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDataSpeedViewController.m; sourceTree = "<group>"; };
+		84E1CD1E290F965C00F4E937 /* TSDataHeartRateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDataHeartRateViewController.h; sourceTree = "<group>"; };
+		84E1CD1F290F965C00F4E937 /* TSDataHeartRateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDataHeartRateViewController.m; sourceTree = "<group>"; };
+		84E1CD21290FA9D800F4E937 /* VLPageMenuTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLPageMenuTitleView.h; sourceTree = "<group>"; };
+		84E1CD22290FA9D800F4E937 /* VLPageMenuTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLPageMenuTitleView.m; sourceTree = "<group>"; };
+		84E1CD24290FA9EB00F4E937 /* VLPageMenuContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLPageMenuContentView.h; sourceTree = "<group>"; };
+		84E1CD25290FA9EB00F4E937 /* VLPageMenuContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLPageMenuContentView.m; sourceTree = "<group>"; };
 		84F152EA28F941C40002B62C /* CustomKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomKeyboard.h; sourceTree = "<group>"; };
 		84F152EB28F941C40002B62C /* CustomKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomKeyboard.m; sourceTree = "<group>"; };
 		84F152ED28FCE3B40002B62C /* UITextField+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Common.h"; sourceTree = "<group>"; };
@@ -360,6 +396,18 @@
 			children = (
 				842EE48628F69E9F003A7A04 /* TSDataViewController.h */,
 				842EE48728F69E9F003A7A04 /* TSDataViewController.m */,
+				84E1CD0F290F95C500F4E937 /* TSDataCoordinateViewController.h */,
+				84E1CD10290F95C500F4E937 /* TSDataCoordinateViewController.m */,
+				84E1CD12290F961F00F4E937 /* TSDataAgileViewController.h */,
+				84E1CD13290F961F00F4E937 /* TSDataAgileViewController.m */,
+				84E1CD15290F962E00F4E937 /* TSDataPowerViewController.h */,
+				84E1CD16290F962E00F4E937 /* TSDataPowerViewController.m */,
+				84E1CD18290F963B00F4E937 /* TSDataBalanceViewController.h */,
+				84E1CD19290F963B00F4E937 /* TSDataBalanceViewController.m */,
+				84E1CD1B290F964700F4E937 /* TSDataSpeedViewController.h */,
+				84E1CD1C290F964700F4E937 /* TSDataSpeedViewController.m */,
+				84E1CD1E290F965C00F4E937 /* TSDataHeartRateViewController.h */,
+				84E1CD1F290F965C00F4E937 /* TSDataHeartRateViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -367,6 +415,8 @@
 		842EE43E28F552EE003A7A04 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84C59028290FCCE9000DFC71 /* TSDataModel.h */,
+				84C59029290FCCE9000DFC71 /* TSDataModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,6 +424,12 @@
 		842EE43F28F552EE003A7A04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84E1CD09290F91EB00F4E937 /* TSDataLeftTitleView.h */,
+				84E1CD0A290F91EB00F4E937 /* TSDataLeftTitleView.m */,
+				84E1CD0C290F920600F4E937 /* TSDataLeftContentView.h */,
+				84E1CD0D290F920600F4E937 /* TSDataLeftContentView.m */,
+				84C5902B290FCD3C000DFC71 /* TSDataCollectionViewCell.h */,
+				84C5902C290FCD3C000DFC71 /* TSDataCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -868,6 +924,10 @@
 			children = (
 				84F152EA28F941C40002B62C /* CustomKeyboard.h */,
 				84F152EB28F941C40002B62C /* CustomKeyboard.m */,
+				84E1CD21290FA9D800F4E937 /* VLPageMenuTitleView.h */,
+				84E1CD22290FA9D800F4E937 /* VLPageMenuTitleView.m */,
+				84E1CD24290FA9EB00F4E937 /* VLPageMenuContentView.h */,
+				84E1CD25290FA9EB00F4E937 /* VLPageMenuContentView.m */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -955,20 +1015,26 @@
 				8401DE68290788210008ADF2 /* TSTaskCompletedCell.m in Sources */,
 				84F1530128FCF38E0002B62C /* TSHandyColorTool.m in Sources */,
 				84AD791428FD2E0600518085 /* UIWebView+AFNetworking.m in Sources */,
+				84E1CD0E290F920600F4E937 /* TSDataLeftContentView.m in Sources */,
 				84F995D828F7DDE300720A47 /* TSStudentTestLayout.m in Sources */,
 				84AD788528FD02F500518085 /* GTMBase64.m in Sources */,
 				8401DE4D29067D8C0008ADF2 /* TSTaskHeaderView.m in Sources */,
 				842EE48528F69E77003A7A04 /* TSTrainingViewController.m in Sources */,
+				84E1CD1D290F964700F4E937 /* TSDataSpeedViewController.m in Sources */,
 				84F152EF28FCE3B40002B62C /* UITextField+Common.m in Sources */,
+				84E1CD0B290F91EB00F4E937 /* TSDataLeftTitleView.m in Sources */,
+				84E1CD17290F962E00F4E937 /* TSDataPowerViewController.m in Sources */,
 				8401DE502906864C0008ADF2 /* TSTaskHeaderModel.m in Sources */,
 				84AD791328FD2E0600518085 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				84AD78E228FD06BB00518085 /* NSString+Base64.m in Sources */,
 				84AD78E328FD06BB00518085 /* NSData+Base64.m in Sources */,
+				84E1CD14290F961F00F4E937 /* TSDataAgileViewController.m in Sources */,
 				842EE47C28F69DB8003A7A04 /* TSBaseViewController.m in Sources */,
 				842EE49428F6BAB0003A7A04 /* UIButton+Common.m in Sources */,
 				84AD790828FD2E0600518085 /* AFURLResponseSerialization.m in Sources */,
 				84AD788128FD029800518085 /* CheckHelper.m in Sources */,
 				84AA94C028F4F0D300B0EDEF /* AppDelegate.m in Sources */,
+				84E1CD23290FA9D800F4E937 /* VLPageMenuTitleView.m in Sources */,
 				84AD791528FD2E0600518085 /* AFAutoPurgingImageCache.m in Sources */,
 				842EE48B28F69EB9003A7A04 /* TSTaskViewController.m in Sources */,
 				84AD791028FD2E0600518085 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -977,6 +1043,7 @@
 				84F152F828FCE5510002B62C /* UIDevice+Common.m in Sources */,
 				84F1530428FCF4250002B62C /* TSSizeAdaptationTool.m in Sources */,
 				842EE47928F69721003A7A04 /* TSHomeLeftContentView.m in Sources */,
+				84C5902A290FCCE9000DFC71 /* TSDataModel.m in Sources */,
 				84AD791628FD2E0600518085 /* AFImageDownloader.m in Sources */,
 				84AD791228FD2E0600518085 /* UIButton+AFNetworking.m in Sources */,
 				84F152F528FCE5250002B62C /* YYKeychain.m in Sources */,
@@ -998,6 +1065,8 @@
 				84F152EC28F941C40002B62C /* CustomKeyboard.m in Sources */,
 				84F1530728FCF54C0002B62C /* TSHelper.m in Sources */,
 				842EE45628F556B1003A7A04 /* UIView+Rect.m in Sources */,
+				84E1CD20290F965C00F4E937 /* TSDataHeartRateViewController.m in Sources */,
+				84C5902D290FCD3C000DFC71 /* TSDataCollectionViewCell.m in Sources */,
 				84AD792928FE86A400518085 /* TSSettingViewCell.m in Sources */,
 				84F152FB28FCEDAB0002B62C /* CALayer+Common.m in Sources */,
 				842EE47628F69712003A7A04 /* TSHomeLeftTitleView.m in Sources */,
@@ -1005,10 +1074,13 @@
 				84AD791F28FD2F8200518085 /* AFHTTPSessionManager+TSConfig.m in Sources */,
 				84AA94D128F4F0D500B0EDEF /* main.m in Sources */,
 				842EE48828F69E9F003A7A04 /* TSDataViewController.m in Sources */,
+				84E1CD26290FA9EB00F4E937 /* VLPageMenuContentView.m in Sources */,
 				84F9963328F8F88700720A47 /* TSStudentTestCollectionViewCell.m in Sources */,
 				84F995D128F7B04C00720A47 /* TSStudentTestModel.m in Sources */,
 				84F152F228FCE4100002B62C /* NSString+Common.m in Sources */,
 				84AD790C28FD2E0600518085 /* AFNetworkReachabilityManager.m in Sources */,
+				84E1CD11290F95C500F4E937 /* TSDataCoordinateViewController.m in Sources */,
+				84E1CD1A290F963B00F4E937 /* TSDataBalanceViewController.m in Sources */,
 				84AA94C328F4F0D300B0EDEF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

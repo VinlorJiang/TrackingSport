@@ -33,11 +33,13 @@
 
 #pragma mark - Navigation
 
+
+
 - (TSHomeLeftTitleView *)titleView {
     if (!_titleView) {
         NSArray *titleArray = @[@"训练", @"数据",@"作业",@"设置"];
-        
-        _titleView = [[TSHomeLeftTitleView alloc] initWithFrame:CGRectMake(0, 0, KLeftContentViewW, KScreenHeight) titleArray:titleArray];
+        NSArray *imageArray = @[@"menu", @"menu",@"menu",@"menu"];
+        _titleView = [[TSHomeLeftTitleView alloc] initWithFrame:CGRectMake(0, 0, KLeftContentViewW, KScreenHeight) titleArray:titleArray imageArray:imageArray];
         _titleView.delegate = self;
     }
     
@@ -46,16 +48,6 @@
 
 - (TSHomeLeftContentView *)contentView {
     if (!_contentView) {
-//        NSMutableArray *mutabArray = [NSMutableArray array];
-//        for (int i = 0; i < 4; i++) {
-//            int R = arc4random() % 255;
-//            UIViewController *vc = [[UIViewController alloc] init];
-//            vc.view.backgroundColor = [UIColor colorWithRed:R /255.0 green:R/255.0 blue:R/255.0 alpha:1.0];
-//
-////            vc.view.backgroundColor = [UIColor redColor];
-//            [mutabArray addObject:vc];
-//        }
-        
         TSTrainingViewController *trainingVc = [TSTrainingViewController new];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:trainingVc];
         TSDataViewController *dataVc = [TSDataViewController new];
@@ -63,7 +55,7 @@
         TSSettingViewController *settingVc = [TSSettingViewController new];
 //        [mutabArray addObject:<#(nonnull id)#>];
         NSArray *contentVcArray = @[nav, dataVc,taskVc,settingVc];
-        _contentView = [[TSHomeLeftContentView alloc] initWithFrame:CGRectMake(KLeftContentViewW, 0, KScreenWidth, KScreenHeight) childViewControllerArrays:contentVcArray parentViewController:self];
+        _contentView = [[TSHomeLeftContentView alloc] initWithFrame:CGRectMake(KLeftContentViewW, 0, KScreenWidth-KLeftContentViewW, KScreenHeight) childViewControllerArrays:contentVcArray parentViewController:self];
         _contentView.delegate = self;
     }
     return _contentView;
@@ -79,4 +71,6 @@
     TSNSLog(@"");
     [self.titleView titleWithProgress:progress sourceIndex:sourceIndex targetIndex:targetIndex];
 }
+
+
 @end

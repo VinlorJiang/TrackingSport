@@ -24,7 +24,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<TSHomeLeftTitleViewDelegate> delegate;
 
-- (instancetype)initWithFrame:(CGRect)frame titleArray:(NSArray *)titleArray;
+
+- (instancetype)initWithFrame:(CGRect)frame
+                   titleArray:(NSArray *)titleArray
+                   imageArray:(NSArray *)imageArray;
 
 - (void)titleWithProgress:(CGFloat)progress sourceIndex:(int)sourceIndex targetIndex:(int)targetIndex;
 
