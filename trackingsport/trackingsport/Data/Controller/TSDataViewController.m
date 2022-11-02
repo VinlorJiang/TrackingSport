@@ -64,7 +64,7 @@
     [self.contentView currrentIndex:selectedIndex];
 }
 - (void)pageContentView:(TSDataLeftContentView *)pageContentView progress:(CGFloat)progress sourceIndex:(NSInteger)sourceIndex targetIndex:(NSInteger)targetIndex {
-    TSNSLog(@"");
+    NSLog(@"sourceIndex:%i--targetIndex:%i",sourceIndex,targetIndex);
     [self.titleView titleWithProgress:progress sourceIndex:sourceIndex targetIndex:targetIndex];
 }
 

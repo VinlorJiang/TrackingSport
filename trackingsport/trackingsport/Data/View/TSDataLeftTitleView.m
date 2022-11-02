@@ -13,8 +13,10 @@
     int _index;// 当前label点击的位置
     NSMutableArray <UILabel *> *_labelArray;
     
-    NSArray  *_normalColorArray;
-    NSArray *_selectColorArray;
+//    NSArray  *_textNormalColorArray;
+//    NSArray  *_backgroundNormalColorArray;
+//    NSArray *_textSelectedColorArray;
+//    NSArray *_backgroundSelectedColorArray;
 }
 
 
@@ -28,6 +30,12 @@
     if (self) {
         _index = 0;
         _labelArray = [NSMutableArray array];
+        
+//        _textNormalColorArray = @[@192, @192, @192];
+//        _textSelectedColorArray = @[@255, @255, @255];
+//        _backgroundNormalColorArray = @[@0, @0, @0];
+//        _backgroundSelectedColorArray = @[@247, @154, @105];
+        
         self.titleArray = titleArray;
         [self createScrollView];    }
     return  self;
@@ -96,15 +104,20 @@
 }
 
 - (void)titleWithProgress:(CGFloat)progress sourceIndex:(int)sourceIndex targetIndex:(int)targetIndex {
+//
+    
     UILabel *sourceLabel = _labelArray[sourceIndex];
     UILabel *targetLabel = _labelArray[targetIndex];
-
-    sourceLabel.textColor = LightGrayColor;
-    sourceLabel.backgroundColor = ClearColor;
-    targetLabel.textColor = WhiteColor;
+    
+    sourceLabel.textColor = LightGrayColor; // 192， 192， 192
+    sourceLabel.backgroundColor = ClearColor; // 0，0，0
+    targetLabel.textColor = WhiteColor; // 255， 255， 255
     targetLabel.backgroundColor = KRGBColor(247, 154, 105);
+    
 
+    
     _index = targetIndex;
+    
 }
 @end
 

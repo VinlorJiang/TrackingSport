@@ -14,6 +14,8 @@ static NSString *contentCellID = @"ContentCellID";
     UICollectionView *_collectionView;
     BOOL _isForbidScrollDelegate;
     CGFloat _startOffsetX;
+    CGFloat _sourceIndex;
+    CGFloat _targetIndex;
 }
 
 @end
@@ -95,10 +97,10 @@ static NSString *contentCellID = @"ContentCellID";
     if (currentOffsetX > _startOffsetX) {// 左滑
         // 1.计算progress
         progress = currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW);
-        
+
         // 2.计算sourceIndex
         sourceIndex = currentOffsetX / scrollViewW;
-        
+
         // 3.计算targetIndex
         targetIndex = sourceIndex + 1;
         if (targetIndex >= self.childVCs.count) {
@@ -109,24 +111,39 @@ static NSString *contentCellID = @"ContentCellID";
         if (currentOffsetX - _startOffsetX == scrollViewW) {
             progress = 1;
             targetIndex = sourceIndex;
+            
         }
-    } else {// 右滑
+        _sourceIndex = sourceIndex;
+        _targetIndex = targetIndex;
         
+    } else if (currentOffsetX == _startOffsetX) {
+        progress = 1;
+        targetIndex = currentOffsetX / scrollViewW;
+        if (_targetIndex > _sourceIndex) {
+            //左滑未滑过，自动回弹执行右滑逻辑
+            sourceIndex = targetIndex + 1;
+        } else if (_targetIndex < _sourceIndex) {
+            sourceIndex = targetIndex - 1;
+        }
+        
+    } else {// 右滑
         progress = 1 - (currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW));
         
         targetIndex = currentOffsetX / scrollViewW;
-        
+
         sourceIndex = targetIndex + 1;
         if (sourceIndex >= self.childVCs.count) {
             sourceIndex = (int)self.childVCs.count - 1;
         }
+        
+        _sourceIndex = sourceIndex;
+        _targetIndex = targetIndex;
     }
     
     if ([self.delegate respondsToSelector:@selector(pageContentView:progress:sourceIndex:targetIndex:)]) {
         [self.delegate pageContentView:self progress:progress sourceIndex:sourceIndex targetIndex:targetIndex];
     }
 
-    NSLog(@"progress:%lf--sourceIndex:%i--targetIndex:%i",progress,sourceIndex,targetIndex);
 }
 - (void)currrentIndex:(NSInteger)currrentIndex {
     _isForbidScrollDelegate = YES;
