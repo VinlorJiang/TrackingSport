@@ -30,6 +30,7 @@ static NSString *contentCellID = @"ContentCellID";
         self.childVCs = childViewControllerArrays;
         self.parentVC = parentViewController;
         _isForbidScrollDelegate = NO;
+        
         [self setupUI];
     }
     return self;

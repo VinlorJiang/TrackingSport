@@ -41,6 +41,7 @@ static NSString *contentCellID = @"ContentCellID";
     collectionView.dataSource = self;
     collectionView.delegate = self;
     collectionView.scrollEnabled = NO;
+    collectionView.backgroundColor = WhiteColor;
     [collectionView registerClass:[TSDataCollectionViewCell class] forCellWithReuseIdentifier:contentCellID];
     [self.view addSubview:collectionView];
 }

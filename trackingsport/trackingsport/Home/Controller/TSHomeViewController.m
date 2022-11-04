@@ -54,7 +54,7 @@
         TSTaskViewController *taskVc = [TSTaskViewController new];
         TSSettingViewController *settingVc = [TSSettingViewController new];
 //        [mutabArray addObject:<#(nonnull id)#>];
-        NSArray *contentVcArray = @[nav, dataVc,taskVc,settingVc];
+        NSArray *contentVcArray = @[trainingVc, dataVc,taskVc,settingVc];
         _contentView = [[TSHomeLeftContentView alloc] initWithFrame:CGRectMake(KLeftContentViewW, 0, KScreenWidth-KLeftContentViewW, KScreenHeight) childViewControllerArrays:contentVcArray parentViewController:self];
         _contentView.delegate = self;
     }

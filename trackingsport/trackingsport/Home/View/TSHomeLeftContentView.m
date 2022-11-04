@@ -14,6 +14,8 @@ static NSString *contentCellID = @"ContentCellID";
     UICollectionView *_collectionView;
     BOOL _isForbidScrollDelegate;
     CGFloat _startOffsetX;
+    CGFloat _sourceIndex;
+    CGFloat _targetIndex;
 }
 
 @end
@@ -110,6 +112,18 @@ static NSString *contentCellID = @"ContentCellID";
             progress = 1;
             targetIndex = sourceIndex;
         }
+        _sourceIndex = sourceIndex;
+        _targetIndex = targetIndex;
+    } else if (currentOffsetX == _startOffsetX) {
+        progress = 1;
+        targetIndex = currentOffsetX / scrollViewW;
+        if (_targetIndex > _sourceIndex) {
+            //左滑未滑过，自动回弹执行右滑逻辑
+            sourceIndex = targetIndex + 1;
+        } else if (_targetIndex < _sourceIndex) {
+            sourceIndex = targetIndex - 1;
+        }
+        
     } else {// 右滑
         
         progress = 1 - (currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW));
@@ -120,6 +134,8 @@ static NSString *contentCellID = @"ContentCellID";
         if (sourceIndex >= self.childVCs.count) {
             sourceIndex = (int)self.childVCs.count - 1;
         }
+        _sourceIndex = sourceIndex;
+        _targetIndex = targetIndex;
     }
     
     if ([self.delegate respondsToSelector:@selector(pageContentView:progress:sourceIndex:targetIndex:)]) {

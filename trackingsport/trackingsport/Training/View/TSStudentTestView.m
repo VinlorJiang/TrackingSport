@@ -45,6 +45,7 @@ static NSString *contentCellID = @"ContentCellID";
     collectionView.dataSource = self;
     collectionView.delegate = self;
     collectionView.scrollEnabled = NO;
+    collectionView.backgroundColor = WhiteColor;
 //    [collectionView registerClass:[TestCollectionViewCell class] forCellWithReuseIdentifier:contentCellID];
     [collectionView registerNib:[UINib nibWithNibName:@"TSStudentTestCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:contentCellID];
     [self addSubview:collectionView];

@@ -27,8 +27,7 @@
 - (void)initViewController {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     TSLoginViewController *loginVc = [TSLoginViewController new];
-    UINavigationController *navVc = [[UINavigationController alloc] initWithRootViewController:loginVc];
-    self.window.rootViewController = navVc;
+    self.window.rootViewController = loginVc;
     [self.window makeKeyAndVisible];
 }
 
