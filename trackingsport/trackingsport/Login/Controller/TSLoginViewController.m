@@ -140,10 +140,13 @@
 
 - (void)login {
     TSNSLog(@"");
-    UINavigationController *navVc = [[UINavigationController alloc] initWithRootViewController:[TSHomeViewController new]];
+    
+    TSHomeViewController *homeVC = [TSHomeViewController new];
+//    homeVC.navigationController.navigationBarHidden = YES;
+    UINavigationController *navVc = [[UINavigationController alloc] initWithRootViewController:homeVC];
 //    [KAppDelegate.window.rootViewController presentViewController:[TSRootViewController new] animated:YES completion:nil];
     
-    KWindow.rootViewController = [TSHomeViewController new];
+    KWindow.rootViewController = navVc;
     
 //    NSDictionary *paramDic = [[NSDictionary alloc] init];
 //    [[TSNetWorkManage shareManage] loginRequestFromController:self parameters:paramDic success:^(TSNetworkRespose * _Nonnull dataTask, id  _Nonnull response, NSDictionary * _Nonnull loginSaveDictionary) {

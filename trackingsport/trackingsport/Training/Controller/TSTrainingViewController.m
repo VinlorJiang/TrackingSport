@@ -6,13 +6,11 @@
 //
 
 #import "TSTrainingViewController.h"
-#import "TSTrainView.h"
 #import "TSStudentTestView.h"
 #import "TSStudentTestModel.h"
 #import "TSTrainDetailViewController.h"
 
 @interface TSTrainingViewController ()<TSStudentTestViewClickDelegate>
-@property (strong, nonatomic) TSTrainView *trainView;
 @property (strong, nonatomic) TSStudentTestView *stuTestView;
 @property (strong, nonatomic) NSMutableArray<TSStudentTestModel *> *dataArray;
 @end
@@ -24,31 +22,32 @@
     // Do any additional setup after loading the view.
     self.title = @"Training";
     self.view.backgroundColor = WhiteColor;
-    [self.view addSubview:self.trainView];
     [self handleEvent];
     [self.view addSubview:self.stuTestView];
     self.stuTestView.stuTestViewClickDelegate = self;
+    
+    
 }
+
 
 - (void)handleEvent {
     __block typeof(self) weakSelf = self;
-    self.trainView.trainingTypeBlock = ^(UIButton * _Nonnull type) {
+    self.stuTestView.trainingTypeBlock = ^(UIButton * _Nonnull type) {
         [weakSelf trainType:type.tag];
     };
 }
 
 - (void)trainType:(NSInteger)tag {
     NSLog(@"tag:%ld",(long)tag);
+    NSArray *dicArr = @[@"协调训练模式",@"敏捷训练模式",@"力量训练模式",@"平衡训练模式",@"速度训练模式",@"心率训练模式",
+    ];
+    TSTrainDetailViewController *detailVc = [TSTrainDetailViewController new];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    [self.navigationController pushViewController:detailVc animated:YES];
 }
 
 #pragma mark - setter and getter
-
-- (TSTrainView *)trainView {
-    if(!_trainView) {
-        _trainView = [[TSTrainView alloc] initWithFrame:CGRectMake(10, 30, KScreenWidth-70-100, 100) textArray:@[@"协调",@"敏捷",@"力量",@"平衡",@"速度",@"心率"]];
-    }
-    return _trainView;
-}
 
 - (TSStudentTestView *)stuTestView {
     if (!_stuTestView) {
@@ -61,7 +60,7 @@
             model.gradeStr = gradeArray[i];
             [self.dataArray addObject:model];
         }
-        _stuTestView = [[TSStudentTestView alloc] initWithFrame:CGRectMake(10, 130, KScreenWidth-70-100, KScreenHeight-130) dataSource:self.dataArray];
+        _stuTestView = [[TSStudentTestView alloc] initWithFrame:CGRectMake(20, 30, KScreenWidth-KLeftContentViewW-20, KScreenHeight-20) textArray:@[@"协调",@"敏捷",@"力量",@"平衡",@"速度",@"心率"] dataSource:self.dataArray];
     }
     return _stuTestView;;
 }
@@ -69,7 +68,6 @@
 #pragma -- delagate
 - (void)click:(TSStudentTestModel *)model index:(NSInteger)index {
     NSLog(@"model:%@",model);
-    TSTrainDetailViewController *detailVc = [TSTrainDetailViewController new];
-    [self.navigationController pushViewController:detailVc animated:YES];
+    
 }
 @end

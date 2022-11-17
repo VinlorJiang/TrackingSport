@@ -13,7 +13,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
    
-    self.backgroundColor = LightGrayColor;
+    self.cornerRadius = 16;
+    self.gradeLB.textColor = KRGBColor(158, 164, 168);
 }
 
 - (void)setTestModel:(TSStudentTestModel *)testModel {

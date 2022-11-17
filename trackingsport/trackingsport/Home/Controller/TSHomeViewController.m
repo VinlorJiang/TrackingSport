@@ -30,7 +30,16 @@
     [self.view addSubview:self.contentView];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // 导航栏隐藏
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
 #pragma mark - Navigation
 
 

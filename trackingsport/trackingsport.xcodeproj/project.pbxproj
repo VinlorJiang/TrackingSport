@@ -29,6 +29,10 @@
 		842EE49428F6BAB0003A7A04 /* UIButton+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE49328F6BAB0003A7A04 /* UIButton+Common.m */; };
 		842EE49728F6BBA8003A7A04 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE49628F6BBA8003A7A04 /* NSObject+Common.m */; };
 		842EE49A28F6C4BE003A7A04 /* NSDictionary+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 842EE49928F6C4BE003A7A04 /* NSDictionary+Common.m */; };
+		843645F629236EE1009101B2 /* TrainTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843645F529236EE1009101B2 /* TrainTypeView.m */; };
+		843645F92923962F009101B2 /* UIBarButtonItem+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 843645F82923962F009101B2 /* UIBarButtonItem+Common.m */; };
+		843645FC2924D50D009101B2 /* TSTrainClassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843645FB2924D50D009101B2 /* TSTrainClassTableViewCell.m */; };
+		843645FF2924E4C2009101B2 /* TSTrainClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843645FE2924E4C2009101B2 /* TSTrainClassModel.m */; };
 		84AA94C028F4F0D300B0EDEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA94BF28F4F0D300B0EDEF /* AppDelegate.m */; };
 		84AA94C328F4F0D300B0EDEF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA94C228F4F0D300B0EDEF /* SceneDelegate.m */; };
 		84AA94C928F4F0D300B0EDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AA94C728F4F0D300B0EDEF /* Main.storyboard */; };
@@ -85,7 +89,6 @@
 		84F1530128FCF38E0002B62C /* TSHandyColorTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F1530028FCF38E0002B62C /* TSHandyColorTool.m */; };
 		84F1530428FCF4250002B62C /* TSSizeAdaptationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F1530328FCF4250002B62C /* TSSizeAdaptationTool.m */; };
 		84F1530728FCF54C0002B62C /* TSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F1530628FCF54C0002B62C /* TSHelper.m */; };
-		84F995C728F79ED900720A47 /* TSTrainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F995C628F79ED900720A47 /* TSTrainView.m */; };
 		84F995CA28F79EEE00720A47 /* TSStudentTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F995C928F79EEE00720A47 /* TSStudentTestView.m */; };
 		84F995D128F7B04C00720A47 /* TSStudentTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F995D028F7B04C00720A47 /* TSStudentTestModel.m */; };
 		84F995D528F7BF6B00720A47 /* TSTrainDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F995D428F7BF6B00720A47 /* TSTrainDetailViewController.m */; };
@@ -140,6 +143,14 @@
 		842EE49628F6BBA8003A7A04 /* NSObject+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Common.m"; sourceTree = "<group>"; };
 		842EE49828F6C4BE003A7A04 /* NSDictionary+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Common.h"; sourceTree = "<group>"; };
 		842EE49928F6C4BE003A7A04 /* NSDictionary+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Common.m"; sourceTree = "<group>"; };
+		843645F429236EE1009101B2 /* TrainTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrainTypeView.h; sourceTree = "<group>"; };
+		843645F529236EE1009101B2 /* TrainTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainTypeView.m; sourceTree = "<group>"; };
+		843645F72923962F009101B2 /* UIBarButtonItem+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Common.h"; sourceTree = "<group>"; };
+		843645F82923962F009101B2 /* UIBarButtonItem+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Common.m"; sourceTree = "<group>"; };
+		843645FA2924D50D009101B2 /* TSTrainClassTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTrainClassTableViewCell.h; sourceTree = "<group>"; };
+		843645FB2924D50D009101B2 /* TSTrainClassTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTrainClassTableViewCell.m; sourceTree = "<group>"; };
+		843645FD2924E4C2009101B2 /* TSTrainClassModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTrainClassModel.h; sourceTree = "<group>"; };
+		843645FE2924E4C2009101B2 /* TSTrainClassModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTrainClassModel.m; sourceTree = "<group>"; };
 		84AA94BB28F4F0D300B0EDEF /* trackingsport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trackingsport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AA94BE28F4F0D300B0EDEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84AA94BF28F4F0D300B0EDEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -326,8 +337,6 @@
 		84F1530328FCF4250002B62C /* TSSizeAdaptationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSSizeAdaptationTool.m; sourceTree = "<group>"; };
 		84F1530528FCF54C0002B62C /* TSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSHelper.h; sourceTree = "<group>"; };
 		84F1530628FCF54C0002B62C /* TSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSHelper.m; sourceTree = "<group>"; };
-		84F995C528F79ED900720A47 /* TSTrainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTrainView.h; sourceTree = "<group>"; };
-		84F995C628F79ED900720A47 /* TSTrainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTrainView.m; sourceTree = "<group>"; };
 		84F995C828F79EEE00720A47 /* TSStudentTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentTestView.h; sourceTree = "<group>"; };
 		84F995C928F79EEE00720A47 /* TSStudentTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStudentTestView.m; sourceTree = "<group>"; };
 		84F995CF28F7B04C00720A47 /* TSStudentTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStudentTestModel.h; sourceTree = "<group>"; };
@@ -377,6 +386,8 @@
 				84F152FD28FCEF5D0002B62C /* UIColor+Common.m */,
 				84AD791D28FD2F8200518085 /* AFHTTPSessionManager+TSConfig.h */,
 				84AD791E28FD2F8200518085 /* AFHTTPSessionManager+TSConfig.m */,
+				843645F72923962F009101B2 /* UIBarButtonItem+Common.h */,
+				843645F82923962F009101B2 /* UIBarButtonItem+Common.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -460,6 +471,8 @@
 			children = (
 				84F995CF28F7B04C00720A47 /* TSStudentTestModel.h */,
 				84F995D028F7B04C00720A47 /* TSStudentTestModel.m */,
+				843645FD2924E4C2009101B2 /* TSTrainClassModel.h */,
+				843645FE2924E4C2009101B2 /* TSTrainClassModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -467,8 +480,6 @@
 		842EE44328F552EE003A7A04 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				84F995C528F79ED900720A47 /* TSTrainView.h */,
-				84F995C628F79ED900720A47 /* TSTrainView.m */,
 				84F995C828F79EEE00720A47 /* TSStudentTestView.h */,
 				84F995C928F79EEE00720A47 /* TSStudentTestView.m */,
 				84F9963028F8F88700720A47 /* TSStudentTestCollectionViewCell.h */,
@@ -476,6 +487,8 @@
 				84F9963228F8F88700720A47 /* TSStudentTestCollectionViewCell.xib */,
 				84F995D628F7DDE300720A47 /* TSStudentTestLayout.h */,
 				84F995D728F7DDE300720A47 /* TSStudentTestLayout.m */,
+				843645FA2924D50D009101B2 /* TSTrainClassTableViewCell.h */,
+				843645FB2924D50D009101B2 /* TSTrainClassTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -928,6 +941,8 @@
 				84E1CD22290FA9D800F4E937 /* VLPageMenuTitleView.m */,
 				84E1CD24290FA9EB00F4E937 /* VLPageMenuContentView.h */,
 				84E1CD25290FA9EB00F4E937 /* VLPageMenuContentView.m */,
+				843645F429236EE1009101B2 /* TrainTypeView.h */,
+				843645F529236EE1009101B2 /* TrainTypeView.m */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -1008,15 +1023,18 @@
 				842EE47028F6966A003A7A04 /* TSHomeViewController.m in Sources */,
 				84AD790D28FD2E0600518085 /* AFSecurityPolicy.m in Sources */,
 				842EE49A28F6C4BE003A7A04 /* NSDictionary+Common.m in Sources */,
+				843645F92923962F009101B2 /* UIBarButtonItem+Common.m in Sources */,
 				842EE46328F64C97003A7A04 /* TSLoginViewController.m in Sources */,
 				84AD790A28FD2E0600518085 /* AFURLSessionManager.m in Sources */,
 				842EE47F28F69DCC003A7A04 /* TSBaseView.m in Sources */,
 				84F152FE28FCEF5D0002B62C /* UIColor+Common.m in Sources */,
 				8401DE68290788210008ADF2 /* TSTaskCompletedCell.m in Sources */,
 				84F1530128FCF38E0002B62C /* TSHandyColorTool.m in Sources */,
+				843645FF2924E4C2009101B2 /* TSTrainClassModel.m in Sources */,
 				84AD791428FD2E0600518085 /* UIWebView+AFNetworking.m in Sources */,
 				84E1CD0E290F920600F4E937 /* TSDataLeftContentView.m in Sources */,
 				84F995D828F7DDE300720A47 /* TSStudentTestLayout.m in Sources */,
+				843645FC2924D50D009101B2 /* TSTrainClassTableViewCell.m in Sources */,
 				84AD788528FD02F500518085 /* GTMBase64.m in Sources */,
 				8401DE4D29067D8C0008ADF2 /* TSTaskHeaderView.m in Sources */,
 				842EE48528F69E77003A7A04 /* TSTrainingViewController.m in Sources */,
@@ -1035,11 +1053,11 @@
 				84AD788128FD029800518085 /* CheckHelper.m in Sources */,
 				84AA94C028F4F0D300B0EDEF /* AppDelegate.m in Sources */,
 				84E1CD23290FA9D800F4E937 /* VLPageMenuTitleView.m in Sources */,
+				843645F629236EE1009101B2 /* TrainTypeView.m in Sources */,
 				84AD791528FD2E0600518085 /* AFAutoPurgingImageCache.m in Sources */,
 				842EE48B28F69EB9003A7A04 /* TSTaskViewController.m in Sources */,
 				84AD791028FD2E0600518085 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				84AD790F28FD2E0600518085 /* UIRefreshControl+AFNetworking.m in Sources */,
-				84F995C728F79ED900720A47 /* TSTrainView.m in Sources */,
 				84F152F828FCE5510002B62C /* UIDevice+Common.m in Sources */,
 				84F1530428FCF4250002B62C /* TSSizeAdaptationTool.m in Sources */,
 				842EE47928F69721003A7A04 /* TSHomeLeftContentView.m in Sources */,
@@ -1234,8 +1252,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1271,8 +1289,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
