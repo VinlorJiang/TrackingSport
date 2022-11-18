@@ -33,6 +33,7 @@
 		843645F92923962F009101B2 /* UIBarButtonItem+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 843645F82923962F009101B2 /* UIBarButtonItem+Common.m */; };
 		843645FC2924D50D009101B2 /* TSTrainClassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843645FB2924D50D009101B2 /* TSTrainClassTableViewCell.m */; };
 		843645FF2924E4C2009101B2 /* TSTrainClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843645FE2924E4C2009101B2 /* TSTrainClassModel.m */; };
+		8436460529260780009101B2 /* TSModeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8436460429260780009101B2 /* TSModeSelectView.m */; };
 		84AA94C028F4F0D300B0EDEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA94BF28F4F0D300B0EDEF /* AppDelegate.m */; };
 		84AA94C328F4F0D300B0EDEF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA94C228F4F0D300B0EDEF /* SceneDelegate.m */; };
 		84AA94C928F4F0D300B0EDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AA94C728F4F0D300B0EDEF /* Main.storyboard */; };
@@ -151,6 +152,8 @@
 		843645FB2924D50D009101B2 /* TSTrainClassTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTrainClassTableViewCell.m; sourceTree = "<group>"; };
 		843645FD2924E4C2009101B2 /* TSTrainClassModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSTrainClassModel.h; sourceTree = "<group>"; };
 		843645FE2924E4C2009101B2 /* TSTrainClassModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSTrainClassModel.m; sourceTree = "<group>"; };
+		8436460329260780009101B2 /* TSModeSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSModeSelectView.h; sourceTree = "<group>"; };
+		8436460429260780009101B2 /* TSModeSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSModeSelectView.m; sourceTree = "<group>"; };
 		84AA94BB28F4F0D300B0EDEF /* trackingsport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trackingsport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AA94BE28F4F0D300B0EDEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84AA94BF28F4F0D300B0EDEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -489,6 +492,8 @@
 				84F995D728F7DDE300720A47 /* TSStudentTestLayout.m */,
 				843645FA2924D50D009101B2 /* TSTrainClassTableViewCell.h */,
 				843645FB2924D50D009101B2 /* TSTrainClassTableViewCell.m */,
+				8436460329260780009101B2 /* TSModeSelectView.h */,
+				8436460429260780009101B2 /* TSModeSelectView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1046,6 +1051,7 @@
 				84AD791328FD2E0600518085 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				84AD78E228FD06BB00518085 /* NSString+Base64.m in Sources */,
 				84AD78E328FD06BB00518085 /* NSData+Base64.m in Sources */,
+				8436460529260780009101B2 /* TSModeSelectView.m in Sources */,
 				84E1CD14290F961F00F4E937 /* TSDataAgileViewController.m in Sources */,
 				842EE47C28F69DB8003A7A04 /* TSBaseViewController.m in Sources */,
 				842EE49428F6BAB0003A7A04 /* UIButton+Common.m in Sources */,

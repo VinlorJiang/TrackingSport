@@ -8,6 +8,7 @@
 #import "TSTrainDetailViewController.h"
 #import "CustomKeyboard.h"
 #import "TSTrainClassTableViewCell.h"
+#import "TSModeSelectView.h"
 
 #define classBtnW 180
 
@@ -18,6 +19,7 @@
 @property (strong, nonatomic) NSArray *classDataSource;
 @property (strong, nonatomic) UITableView *classTableView;
 @property (strong, nonatomic) UIButton *classBtn;
+@property (strong, nonatomic) TSModeSelectView *modeView;
 @end
 
 @implementation TSTrainDetailViewController
@@ -140,7 +142,14 @@
     self.classTableView.size = CGSizeMake(classBtnW-16, 0);
     self.classTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.classTableView];
+    [self.view addSubview:self.modeView];
     
+    __block typeof(self) weakSelf = self;
+    weakSelf.modeView.backBlock = ^{
+        [UIView animateWithDuration:0.3 animations:^{
+            self.modeView.top = KScreenHeight;
+        }];
+    };
 }
 
 
@@ -153,6 +162,7 @@
             self.classTableView.height = 0;
         }];
     }
+    
    
 }
 
@@ -169,7 +179,13 @@
 }
 // 切换模式
 - (void)kindBtnClick {
-    
+//    TSModeSelectViewController *modeVc = [TSModeSelectViewController new];
+//    modeVc.modalPresentationStyle = UIModalPresentationFullScreen;
+//    [self presentViewController:modeVc animated:YES completion:nil];
+    [self.modeView.backBtn setTitle:@"模式选择" forState:UIControlStateNormal];
+    [UIView animateWithDuration:0.3 animations:^{
+        self.modeView.top = 100;
+    }];
 }
 
 /// 选择学生
@@ -285,5 +301,11 @@
         ];
     }
     return _classDataSource;
+}
+- (TSModeSelectView *)modeView {
+    if (!_modeView) {
+        _modeView = [[TSModeSelectView alloc] initWithFrame:CGRectMake(0, KScreenHeight, KScreenWidth, KScreenHeight-100)];
+    }
+    return _modeView;
 }
 @end
